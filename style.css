@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url(Picture2.jpg);
+}
+
+.box {
+    width: 300px;
+    padding: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: -webkit-linear-gradient(bottom left, #d41e1e 0%,#1f22db 50%, rgb(240, 225, 16), rgb(25, 224, 25));
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border:3px solid yellowgreen;
+}
+
+.reg {
+    font-size: 50px;
+}
+
+.login {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid rgb(0, 238, 255);
+    padding: 18px 14px;
+    width: 200px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 40px;
+    transition: 1s;
+}
+
+.login:hover {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid rgb(255, 0, 212);
+    padding: 18px 14px;
+    width: 200px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 40px;
+    transition: 1s;
+}
+
+.login:focus {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid rgb(0, 255, 13);
+    padding: 18px 14px;
+    width: 280px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 40px;
+    transition: 1s;
+    background: rgb(255, 230, 0);
+    color: black;
+}
+
+.password {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid rgb(0, 238, 255);
+    padding: 18px 14px;
+    width: 200px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 40px;
+    transition: 1s;
+}
+
+.password:hover {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid rgb(255, 0, 212);
+    padding: 18px 14px;
+    width: 200px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 40px;
+    transition: 1s;
+}
+
+.password:focus {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid rgb(0, 255, 13);
+    padding: 18px 14px;
+    width: 280px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 40px;
+    transition: 1s;
+    background: rgb(255, 230, 0);
+}
+
+.button {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid rgb(255, 0, 0);
+    padding: 18px 14px;
+    width: 110px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 40px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid rgb(0, 255, 13);
+    padding: 18px 14px;
+    width: 200px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 40px;
+    transition: 1s;
+    background: rgb(0, 255, 13);
+}
+
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #333333;
+    border-right:4px solid #9ACD32;
+    left: -254px;
+    transition: all 1s;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: royalblue;
+    text-align: center;
+}
+
+#sidebar ul li:first-child {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.95em;
+    list-style: none;
+    padding: 25px 10px 10px 10px;
+}
+
+#sidebar ul li:not(:first-child) {
+    width: 90%;
+    margin-left: 10%;
+    font-size: 1.1em;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar ul li a:hover {
+    text-decoration: none;
+    color: rgb(65, 225, 225);
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    background: rgb(0, 255, 13);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#sidebar .toggle-btn:hover {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background: rgb(123, 255, 130);
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: thistle;
+    margin: 4px 0px;
+}
+
+.helper {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50px;
+    width: 23%;
+    height: 6%;
+    display: block;
+    background: rgb(255, 71, 71);
+    text-align: center;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: auto;
+    border: 3px solid rgb(255, 255, 255);
+    transition: all 1s;
+}
+
+.helper:hover {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50px;
+    width: 23%;
+    display: block;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: auto;
+    border: 3px solid rgb(255, 71, 71);
+}
